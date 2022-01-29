@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sigora-statistics-app';
+  selectedFeature: string = 'input';
+
+  switchView(selectedFeature: string){
+    this.selectedFeature = selectedFeature;
+  }
+
 }

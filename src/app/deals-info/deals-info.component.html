@@ -1,0 +1,61 @@
+<div class="container">
+  <form class="main-form">
+      <h1>Deals</h1>
+      <p>
+          <label for="required-input">Please enter data for this date:</label>
+          <input id="today" type="date">
+      </p>
+      <p>
+          <label for="optional-input">Customer Name: </label>
+          <input type="text" id="optional-input" placeholder="Customer Name">
+      </p>
+      <p>
+          <label for="optional-input">kW: </label>
+          <input type="number" id="optional-input" placeholder="Kilowatts">
+      </p>
+      <p>
+          <label for="optional-input">Cost to Customer: </label>
+          <input type="number" id="optional-input" placeholder="Cost">
+      </p>
+      <p>
+          Cash or Finance: <label class="switch">
+              <input class="switch-input" type="checkbox" />
+              <span class="switch-label" data-on="Cash" data-off="Finance" ></span>
+              <span class="switch-handle"></span>
+          </label>
+      </p>
+      <p>
+          Energy Efficiency <label class="switch">
+              <input class="switch-input" type="checkbox" />
+              <span class="switch-label" data-on="Yes" data-off="No" ></span>
+              <span class="switch-handle"></span>
+          </label>
+      </p>
+      <p>
+          <label for="optional-input">Powerwall: </label>
+          <input type="number" id="optional-input" placeholder="Powerwalls">
+      </p>
+      <p> <!-- Lead Source dropdown of 5 options -->
+          <label for="optional-input">Lead Source: </label>
+          <select class="classic">
+              <option>Door Knock</option>
+              <option selected>Referral</option>
+              <option>Social Media</option>
+              <option>Inside</option>
+              <option>Self</option>
+            </select>
+
+      </p>
+      <p>
+          <label for="optional-input">Commission: </label>
+          <input type="number" id="optional-input" placeholder="Commission">
+      </p>
+
+      <fieldset>
+          <legend>Send Your Info</legend>
+          <!-- <a href="#" class="dataButton">View Report</a> -->
+          <a href="#" class="submitButton" (click)="'viewdata'">Submit</a>
+
+      </fieldset>
+  </form>
+</div>

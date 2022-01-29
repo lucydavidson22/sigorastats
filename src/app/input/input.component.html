@@ -1,0 +1,69 @@
+<div class="container">
+  <form class="main-form" >
+      <h1>Advanced Form Styling</h1>
+      <p>
+          <label for="required-input">Please enter data for this date:</label>
+          <input id="today" type="date">
+      </p>
+      <p>
+          <label for="optional-input">Knocks: </label>
+          <input type="text" id="numKnocks" placeholder="Knocks" name="numKnocks" >
+      </p>
+      <p>
+          <label for="optional-input">Answers: </label>
+          <input type="text" id="numAnswers" placeholder="Answers">
+      </p>
+      <p>
+          <label for="optional-input">Sets: </label>
+          <input type="text" id="numSets" placeholder="Sets">
+      </p>
+      <p>
+          <label for="optional-input">Total Time: </label>
+          <input type="text" id="numHours" placeholder="Time in Hours">
+      </p>
+      <p>
+          <label for="optional-input">Props Run: </label>
+          <input type="text" id="numProps" placeholder="Props">
+      </p>
+
+      <fieldset>
+          <legend>Send Your Info</legend>
+          <!-- <a href="./data/data.html" class="dataButton" value="">View Data</a> -->
+          <a href="#" class="submitButton" (click)="onAddValue()">Submit</a>
+          <!-- <button (click)="onClickMe()">Click me!</button> -->
+      </fieldset>
+  </form>
+  <p>{{ knocks }}</p>
+</div>
+
+
+
+
+<!-- <div class="flex-child"> -->
+  <form class="main-form">
+      <h1>Daily Data</h1>
+      <fieldset>
+          <legend>Knocks/Answer</legend>
+          <!-- <div class="knocksAnswers" id="knocksAnswers"> -->
+          <div class="knocksAnswers">
+              <span id="knocksPerAnswers">{{ knocks }} / {{ answers }}</span>
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend>Knocks/Hour</legend>
+          <div class="knocksHour">{{ time }}</div>
+      </fieldset>
+      <fieldset>
+          <legend>Sets/Answer</legend>
+          <div class="setsAnswers">{{ answers }}</div>
+      </fieldset>
+      <fieldset>
+          <legend>Sets/Hour</legend>
+          <div class="setsHours">{{ sets }}</div>
+      </fieldset>
+      <fieldset>
+          <legend>Total Time</legend>
+          <div class="totalHoursTime">{{ props }}</div>
+      </fieldset>
+  </form>
+<!-- </div> -->
