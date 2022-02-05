@@ -1,6 +1,6 @@
-<div class="container">
+<!-- <div class="container">
   <form class="main-form" >
-      <h1>Advanced Form Styling</h1>
+      <h1>Daily Data</h1>
       <p>
           <label for="required-input">Please enter data for this date:</label>
           <input id="today" type="date">
@@ -26,44 +26,95 @@
           <input type="text" id="numProps" placeholder="Props">
       </p>
 
-      <fieldset>
-          <legend>Send Your Info</legend>
-          <!-- <a href="./data/data.html" class="dataButton" value="">View Data</a> -->
+      <div class="report">Send Your Info</div class="report">
+          <a href="./data/data.html" class="dataButton" value="">View Data</a>
           <a href="#" class="submitButton" (click)="onAddValue()">Submit</a>
-          <!-- <button (click)="onClickMe()">Click me!</button> -->
-      </fieldset>
-  </form>
-  <p>{{ knocks }}</p>
-</div>
+          <button (click)="onClickMe()">Click me!</button>
+
+
+          >
+</div> -->
 
 
 
 
-<!-- <div class="flex-child"> -->
+<!-- <div class="flex-child">
+<div class="container">
   <form class="main-form">
-      <h1>Daily Data</h1>
-      <fieldset>
-          <legend>Knocks/Answer</legend>
-          <!-- <div class="knocksAnswers" id="knocksAnswers"> -->
+      <h1>How Well You Did</h1>
+        <div class="report">Knocks/Answer</div>
+          <div class="knocksAnswers" id="knocksAnswers">
           <div class="knocksAnswers">
               <span id="knocksPerAnswers">{{ knocks }} / {{ answers }}</span>
           </div>
-      </fieldset>
-      <fieldset>
-          <legend>Knocks/Hour</legend>
+
+          <div class="report">Knocks/Hour</div>
           <div class="knocksHour">{{ time }}</div>
-      </fieldset>
-      <fieldset>
-          <legend>Sets/Answer</legend>
+
+          <div class="report">Sets/Answer</div>
           <div class="setsAnswers">{{ answers }}</div>
-      </fieldset>
-      <fieldset>
-          <legend>Sets/Hour</legend>
+
+          <div class="report">Sets/Hour</div>
           <div class="setsHours">{{ sets }}</div>
-      </fieldset>
-      <fieldset>
-          <legend>Total Time</legend>
+
+          <div class="report">Total Time</div>
           <div class="totalHoursTime">{{ props }}</div>
-      </fieldset>
-  </form>
-<!-- </div> -->
+
+
+          >
+</div> -->
+
+
+
+
+
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form class="main-form">
+  <h3>Daily Data</h3>
+    <label for="today">Please enter data for this date:</label>
+    <input id="today" type="date">
+
+    <label for="numKnocks">Knocks: </label>
+    <input type="text" id="numKnocks" placeholder="Knocks" name="numKnocks" >
+
+    <label for="numAnswers">Answers: </label>
+    <input type="text" id="numAnswers" placeholder="Answers">
+
+    <label for="numSets">Sets: </label>
+    <input type="text" id="numSets" placeholder="Sets">
+
+    <label for="numHours">Total Time: </label>
+    <input type="text" id="numHours" placeholder="Time in Hours">
+
+    <label for="numProps">Props Run: </label>
+    <input type="text" id="numProps" placeholder="Props">
+
+  <button href="#" class="submitButton" (click)="onAddValue()" style="color:black">Submit</button>
+</form>
+
+<form class="main-form">
+  <h3>How Well You Did</h3>
+
+    <div class="report"><h4>Knocks/Answer:</h4>
+      <div class="knocksAnswers" id="knocksAnswers">{{ knocks }} / {{ answers }}</div>
+    </div>
+
+    <div class="report"><h4>Knocks/Hour:</h4>
+      <div id="knocksHour">{{ time }}</div>
+    </div>
+
+    <div class="report"><h4>Sets/Answer:</h4>
+      <div id="setsAnswers">{{ answers }}</div>
+    </div>
+
+    <div class="report"><h4>Sets/Hour:</h4>
+      <div id="setsHours">{{ sets }}</div>
+    </div>
+
+    <div class="report"><h4>Total Time:</h4>
+      <div id="totalHoursTime">{{ props }}</div>
+    </div>
+</form>

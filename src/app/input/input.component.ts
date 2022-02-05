@@ -21,8 +21,8 @@ export class InputComponent implements OnInit {
   }
 
   onAddValue(){
-    // let knock = this.knocks;
-    // let ans = this.answers;
+    let knock = this.knocks;
+    let ans = this.answers;
     // this.knocksPerAns = knock/ans;
 
     this.knocks = 132;

@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-html{
+ html{
   background-color: rgb(0, 0, 0);
   color: #ffc82c;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   font-family: Avenir Next, sans-serif;
 }
-
-/* Navigation Bar */
 
 .logo{
   float: left;
@@ -16,34 +15,24 @@ html{
   max-width: 150px;
   max-height: 50px;
 }
+/*
 
-/* Other Styling */
-
-/* header{
-  font-family: Raleway, sans-serif;
-  overflow: hidden;
-  text-align: center;
-  margin: auto;
-  color: white;
-  width: 100%;
+p{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-  header::after{
-  content: '';
-  display:table;
-  clear:both;
+.container{
+  padding: 25px;
 } */
 
 .main-form {
-  max-width:  30rem;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 30px #ffc82c;
-  color: white;
-  background: url('../src/assets/images/solarPanel.jpeg');
+  display: inline-block;
+  vertical-align: middle;
 }
-
+/*
 .main-form h1 {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
@@ -63,22 +52,21 @@ fieldset{
   text-align: center;
 }
 
-/* Button styling */
-
 button{
   margin-right: 5px;
   margin-left: 5px;
   align-items: center;
 
-}
+} */
 
-/* Experimenting Buttons */
-.submitButton {
-box-shadow: 0px 1px 0px 0px #fff6af; /*yellow*/
-background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%); /* green to yellow */
-background-color:#00b259; /*green*/
+/********************************************************************
+* Customized Buttons
+**********************************************************************/
+/* .submitButton {
+box-shadow: 0px 1px 0px 0px #fff6af;
+background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%);
+background-color:#00b259;
 border-radius:6px;
-/* border:1px solid #ffc82c; */
 display:inline-block;
 cursor:pointer;
 color:#333333;
@@ -103,7 +91,6 @@ box-shadow: 0px 1px 0px 0px #fff6af;
 background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%);
 background-color:#ffc82c;
 border-radius:6px;
-/* border:1px solid #ffc82c; yellow */
 display:inline-block;
 cursor:pointer;
 color:#333333;
@@ -112,17 +99,20 @@ font-size:15px;
 font-weight:bold;
 padding:6px 24px;
 text-decoration:none;
-text-shadow:0px 1px 0px #ffc82c; /*yellow*/
+text-shadow:0px 1px 0px #ffc82c;
 }
 .dataButton:hover {
-background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%); /* green to yellow */
-background-color:#00b259; /*green*/
-}
+background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%);
+background-color:#00b259;
+} */
 
-
-/* Mobile Nav Attempt */
-
-li {
+/********************************************************************
+* Mobile Nav Attempt
+* NOTES:
+* color: #ffc82c; Correct sigora yellow color
+* color: #00b259; Correct sigora green color
+**********************************************************************/
+/* li {
 
   list-style: none;
 }
@@ -131,13 +121,14 @@ a {
   font-size: 12px;
   text-decoration: none;
 }
-
+*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
+/*
 
 .hamburger {
   display: none;
@@ -167,15 +158,15 @@ a {
   font-size: 20px;
   font-family: Avenir Next, sans-serif;
   font-weight: 400;
-  color: #00b259; /* Correct sigora green color */
+  color: #00b259;
 }
 
 .active{
-  color: #ffc82c; /* Correct sigora yellow color */
+  color: #ffc82c;
 }
 
 .nav-link:hover{
-  color: #ffc82c; /* Correct sigora yellow color */
+  color: #ffc82c;
   text-shadow: 2px 2px 2px #ffc82c;
 }
 
@@ -212,9 +203,7 @@ a {
   .hamburger {
       display: block;
       cursor: pointer;
-  } */
-
-   /* // Inside the Media Query. */
+  }
 
   .hamburger.active .bar:nth-child(2) {
       opacity: 0;
@@ -228,9 +217,11 @@ a {
       transform: translateY(-8px) rotate(-45deg);
   }
 
-}
+} */
+/********************************************************************
+*Side by side div css
+**********************************************************************/
 
-/* Side by Side divs */
 .flex-container {
   display: flex;
 }
@@ -245,4 +236,128 @@ a {
 
 .flex-child fieldset legend {
   color: #ffc82c;
+}
+/***************************************************************************************************/
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    /* transform: translate(-50%,-50%); */
+    /* left: 50%;
+    top: 50%; */
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+      #fffb29,
+      #f09819
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+.container{
+  padding: 25px;
+}
+
+form{
+    min-height: 520px;
+    width: 600px;
+    background-color: rgba(255,255,255,0.13);
+    display: inline-block;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    float: left;
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    float: right;
+    display: block;
+    height: 40px;
+    width: 50%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
 }
