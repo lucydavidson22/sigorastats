@@ -1,51 +1,67 @@
+
 <div class="flex-container">
 
   <div class="flex-child">
+    <div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
       <form class="main-form">
           <h1>Your Goals</h1>
-          <p>
-              <label for="required-input">Start Date:</label>
-              <input id="today" type="date">
-          </p>
-          <p>
-              <label for="required-input">End Date:</label>
-              <input id="today" type="date">
-          </p>
-          <p>
-              <label for="optional-input">Commission Goal: </label>
-              <input type="number" id="optional-input" placeholder="Commission Goal">
-          </p>
+          <table>
+            <tr>
+              <td>Start Date: </td>
+              <td><input id="today" type="date"></td>
+            </tr>
+            <tr>
+              <td>End Date: </td>
+              <td><input id="today" type="date"></td>
+            </tr>
+            <tr>
+              <td>Commission Goal: </td>
+              <td><input type="number" id="optional-input" placeholder="Commission Goal"></td>
+            </tr>
+          </table>
       </form>
   </div>
 
   <div class="flex-child">
       <form class="main-form">
           <h1>What You Need</h1>
-          <fieldset>
-              <legend>Deals Needed</legend>
-              <!-- neededDeals = Goal/(avg commission) -->
-              <div class="knocksAnswers"> will be displayed here</div>
-          </fieldset>
-          <fieldset>
-              <legend>Need to Sit With</legend>
-              <!-- sitsNeeded = neededDeals/closing % -->
-              <div class="knocksHour">will be displayed here</div>
-          </fieldset>
-          <fieldset>
-              <legend>Doors to Knock All Year</legend>
-              <!-- doorsToKnockYear = (sitsNeeded * sets/sit)*(answers/set * knocks/answer) -->
-              <div class="setsAnswers">will be displayed here</div>
-          </fieldset>
-          <fieldset>
-              <legend>Doors Knocked Each Week Day</legend>
-              <!-- doorsToKnockDay = doorsToKnockYear/(365 * 5/7) -->
-              <div class="setsHours">will be displayed here</div>
-          </fieldset>
-          <fieldset>
-              <!-- dailyPace = (door-knock goal - doors knocked so far)/(# of remaining days*5/7) in the year) -->
-              <legend>Daily Pace to Hit Goal</legend>
-              <div class="setsHours">will be displayed here</div>
-          </fieldset>
+          <div class="knocksAnswers">
+            <h4>Deals Needed</h4>
+            <div id="knocksAnswers">
+              Results will be here
+            </div>
+          </div>
+
+          <div class="knocksHour">
+            <h4>Need to Sit With</h4>
+            <div id="knocksHour">
+              Results will be here
+            </div>
+          </div>
+
+          <div class="setsAnswers">
+            <h4>Doors to Knock All Year</h4>
+            <div id="setsAnswers">
+              Results will be here
+            </div>
+          </div>
+
+          <div class="setsHours">
+            <h4>Doors Knocked Each Week Day</h4>
+            <div id="setsHours">
+              Results will be here
+            </div>
+          </div>
+
+          <div class="setsHours">
+            <h4>Daily Pace to Hit Goal</h4>
+            <div id="setsHours">
+              Results will be here
+            </div>
+          </div>
       </form>
   </div>
 

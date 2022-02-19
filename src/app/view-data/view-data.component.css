@@ -1,0 +1,38 @@
+.background{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.background .shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:nth-child(1){
+  background: linear-gradient(
+    #fffb29,
+    #f09819
+  );
+  left: -420px;
+  top: -150px;
+}
+.shape:nth-child(2){
+  background: linear-gradient(
+      #92d7ff,
+      #ffd726
+  );
+  right: -500px;
+  bottom: 260px;
+}
+.shape:nth-child(3){
+  background: linear-gradient(
+    #ff512f,
+      #f09819
+  );
+  right: 80px;
+  bottom: -10px;
+}

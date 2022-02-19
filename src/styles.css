@@ -15,96 +15,12 @@
   max-width: 150px;
   max-height: 50px;
 }
-/*
 
-p{
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.container{
-  padding: 25px;
-} */
 
 .main-form {
   display: inline-block;
   vertical-align: middle;
 }
-/*
-.main-form h1 {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--gray-lighter);
-  font-size: var(--font-size-3);
-  text-align: center;
-}
-
-input {
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 0.75rem;
-  float: right;
-}
-
-fieldset{
-  text-align: center;
-}
-
-button{
-  margin-right: 5px;
-  margin-left: 5px;
-  align-items: center;
-
-} */
-
-/********************************************************************
-* Customized Buttons
-**********************************************************************/
-/* .submitButton {
-box-shadow: 0px 1px 0px 0px #fff6af;
-background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%);
-background-color:#00b259;
-border-radius:6px;
-display:inline-block;
-cursor:pointer;
-color:#333333;
-font-family:Arial;
-font-size:15px;
-font-weight:bold;
-padding:6px 24px;
-text-decoration:none;
-text-shadow:0px 1px 0px #ffc82c;
-}
-.submitButton:hover {
-background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%);
-background-color:#ffc82c;
-}
-.submitButton:active, .dataButton:active {
-position:relative;
-top:1px;
-}
-
-.dataButton {
-box-shadow: 0px 1px 0px 0px #fff6af;
-background:linear-gradient(to bottom, #ffc82c 5%, #00b259 100%);
-background-color:#ffc82c;
-border-radius:6px;
-display:inline-block;
-cursor:pointer;
-color:#333333;
-font-family:Arial;
-font-size:15px;
-font-weight:bold;
-padding:6px 24px;
-text-decoration:none;
-text-shadow:0px 1px 0px #ffc82c;
-}
-.dataButton:hover {
-background:linear-gradient(to bottom, #00b259 5%, #ffc82c 100%);
-background-color:#00b259;
-} */
 
 /********************************************************************
 * Mobile Nav Attempt
@@ -112,112 +28,13 @@ background-color:#00b259;
 * color: #ffc82c; Correct sigora yellow color
 * color: #00b259; Correct sigora green color
 **********************************************************************/
-/* li {
-
-  list-style: none;
-}
-
-a {
-  font-size: 12px;
-  text-decoration: none;
-}
-*/
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
 }
-/*
 
-.hamburger {
-  display: none;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #00b259;
-}
-
-.nav-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  margin-left: 5rem;
-}
-
-.nav-link{
-  font-size: 20px;
-  font-family: Avenir Next, sans-serif;
-  font-weight: 400;
-  color: #00b259;
-}
-
-.active{
-  color: #ffc82c;
-}
-
-.nav-link:hover{
-  color: #ffc82c;
-  text-shadow: 2px 2px 2px #ffc82c;
-}
-
-.nav-logo {
-  font-size: 2.1rem;
-  font-weight: 500;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: rgb(0, 0, 0);
-      width: -120%;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
-      color: white;
-      padding: 20px;
-  }
-
-  .nav-menu.active {
-      left: 0;
-  }
-
-  .nav-item {
-      margin: 2.5rem 0;
-  }
-
-  .hamburger {
-      display: block;
-      cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-  }
-
-} */
 /********************************************************************
 *Side by side div css
 **********************************************************************/
@@ -251,9 +68,6 @@ body{
 .background{
     width: 430px;
     height: 520px;
-    /* transform: translate(-50%,-50%); */
-    /* left: 50%;
-    top: 50%; */
 }
 .background .shape{
     height: 200px;
@@ -290,7 +104,8 @@ form{
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
+    padding: 30px 65px;
+    /* padding: 40px; */
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -338,26 +153,4 @@ button{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
-}
-.social{
-  margin-top: 30px;
-  display: flex;
-}
-.social div{
-  background: red;
-  width: 150px;
-  border-radius: 3px;
-  padding: 5px 10px 10px 5px;
-  background-color: rgba(255,255,255,0.27);
-  color: #eaf0fb;
-  text-align: center;
-}
-.social div:hover{
-  background-color: rgba(255,255,255,0.47);
-}
-.social .fb{
-  margin-left: 25px;
-}
-.social i{
-  margin-right: 4px;
 }

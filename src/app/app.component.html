@@ -1,9 +1,14 @@
-<app-header (selectedFeatureEvent)="switchView($event)"></app-header>
-<div>
-  <app-login *ngIf="selectedFeature === 'login'"></app-login>
-  <app-view-data *ngIf="selectedFeature === 'view-data'"></app-view-data>
-  <app-input *ngIf="selectedFeature === 'input'"></app-input>
-  <app-deals-info *ngIf="selectedFeature === 'dealsinfo'"></app-deals-info>
-  <app-goals *ngIf="selectedFeature === 'goals'"></app-goals>
-
+<app-header></app-header>
+<!-- <app-header (selectedFeatureEvent)="switchView($event)"></app-header> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-login *ngIf="selectedFeature === 'login'"></app-login> -->
+      <!-- <app-view-data *ngIf="selectedFeature === 'view-data'"></app-view-data>
+      <app-input *ngIf="selectedFeature === 'input'"></app-input>
+      <app-deals-info *ngIf="selectedFeature === 'dealsinfo'"></app-deals-info>
+      <app-goals *ngIf="selectedFeature === 'goals'"></app-goals> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>

@@ -1,28 +1,92 @@
-<div class="flex-child">
-  <form class="main-form">
-      <h1>Daily Data</h1>
-      <fieldset>
-          <legend>Knocks/Answer</legend>
-          <!-- <div class="knocksAnswers" id="knocksAnswers"> -->
+<div class="flex-container">
+  <div class="flex-child">
+    <form class="main-form">
+        <h1>Daily Data</h1>
+        <!-- <p-fieldset legend="Knocks/Answer" [toggleable]="true">
+          <div class="knocksAnswers" id="knocksAnswers">
+            <div class="knocksAnswers">
+                Result: <span id="knocksPerAnswers"></span>
+            </div>
+            </div>
+        </p-fieldset> -->
+        <!-- <fieldset> -->
           <div class="knocksAnswers">
-              Result: <span id="knocksPerAnswers"></span>
+            <h4>Knocks/Answer</h4>
+            <div id="knocksAnswers">
+                Result: <span id="knocksPerAnswers"></span>
+            </div>
           </div>
-      </fieldset>
-      <fieldset>
-          <legend>Knocks/Hour</legend>
-          <div class="knocksHour">will be displayed here</div>
-      </fieldset>
-      <fieldset>
-          <legend>Sets/Answer</legend>
-          <div class="setsAnswers">will be displayed here</div>
-      </fieldset>
-      <fieldset>
-          <legend>Sets/Hour</legend>
-          <div class="setsHours">will be displayed here</div>
-      </fieldset>
-      <fieldset>
-          <legend>Total Time</legend>
-          <div class="totalHoursTime">will be displayed here</div>
-      </fieldset>
-  </form>
+
+          <div class="knocksHour">
+            <h4>Knocks/Hour</h4>
+            <div id="knocksHour">
+              Results:
+            </div>
+          </div>
+
+          <div class="setsAnswers">
+            <h4>Sets/Answer</h4>
+            <div id="setsAnswers">
+              Results:
+            </div>
+          </div>
+
+          <div class="setsHours">
+            <h4>Sets/Hour</h4>
+            <div id="setsHours">
+              Results:
+            </div>
+          </div>
+
+          <div class="totalTime">
+            <h4>Total Time</h4>
+            <div id="totalTime">
+              Results:
+            </div>
+          </div>
+
+
+        <!-- <fieldset>
+            <legend>Knocks/Hour</legend>
+            <div class="knocksHour">will be displayed here</div>
+        </fieldset>
+        <fieldset>
+            <legend>Sets/Answer</legend>
+            <div class="setsAnswers">will be displayed here</div>
+        </fieldset>
+        <fieldset>
+            <legend>Sets/Hour</legend>
+            <div class="setsHours">will be displayed here</div>
+        </fieldset>
+        <fieldset>
+            <legend>Total Time</legend>
+            <div class="totalHoursTime">will be displayed here</div>
+        </fieldset> -->
+             </form>
+  </div>
+
+  <!-- <app-yearly-stats></app-yearly-stats> -->
 </div>
+<!-- <form class="main-form">
+  <h3>How Well You Did</h3>
+
+    <div class="report"><h4>Knocks/Answer:</h4>
+      <div class="knocksAnswers" id="knocksAnswers">{{ knocks }} / {{ answers }}</div>
+    </div>
+
+    <div class="report"><h4>Knocks/Hour:</h4>
+      <div id="knocksHour">{{ time }}</div>
+    </div>
+
+    <div class="report"><h4>Sets/Answer:</h4>
+      <div id="setsAnswers">{{ answers }}</div>
+    </div>
+
+    <div class="report"><h4>Sets/Hour:</h4>
+      <div id="setsHours">{{ sets }}</div>
+    </div>
+
+    <div class="report"><h4>Total Time:</h4>
+      <div id="totalHoursTime">{{ props }}</div>
+    </div>
+</form> -->

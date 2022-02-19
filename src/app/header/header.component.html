@@ -2,12 +2,18 @@
   <nav class="navbar">
       <a href="#" class="nav-logo"><img src="../../assets/images/sigoraLogo.png" alt="logo" class="logo"></a>
       <ul class="nav-menu">
-          <li class="nav-item"><a href="#" class="nav-link active" (click)="onSelect('login')" [ngClass]="{'active': step === 'login'}">Login</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('input')" [ngClass]="{'active': step === 'input'}">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('view-data')" [ngClass]="{'active': step === 'view-data'}">View Information</a></li>
-          <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('dealsinfo')" [ngClass]="{'active': step === 'dealsinfo'}">Deals Information</a></li>
-          <!-- <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('recipe')">Commission Calculator</a></li> -->
-          <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('goals')" [ngClass]="{'active': step === 'goals'}">Goals</a></li>
+    <!--  <li class="nav-item"><a class="nav-link active" (click)="onSelect('login')" [ngClass]="{'active': step === 'login'}">Login</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="onSelect('input')" [ngClass]="{'active': step === 'input'}">Home</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="onSelect('view-data')" [ngClass]="{'active': step === 'view-data'}">View Information</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="onSelect('dealsinfo')" [ngClass]="{'active': step === 'dealsinfo'}">Deals Information</a></li>
+          <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('recipe')">Commission Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" (click)="onSelect('goals')" [ngClass]="{'active': step === 'goals'}">Goals</a></li> -->
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/login">Login</a></li>
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/input">Home</a></li>
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/view-data">View Info</a></li>
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/dealsinfo">Deals Info</a></li>
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/customers">Customer Names</a></li>
+          <li class="nav-item" routerLinkActive="active"><a class="nav-link" routerLink="/goals">Goals</a></li>
       </ul>
       <div class="hamburger">
           <span class="bar"></span>

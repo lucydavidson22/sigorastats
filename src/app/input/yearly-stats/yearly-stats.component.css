@@ -1,0 +1,17 @@
+.daysKnocking,
+.totalKnocks,
+.totalAnswers,
+.totalSets,
+.avgKnocksAnswers,
+.avgKnocksHour,
+.avgSetsAnswers,
+.avgSetsHours,
+.totalHoursTime{
+  border:2px solid #00b259;
+  border-radius: 15px;
+}
+
+div h4{
+  color: #ffc82c;
+  font-size: 22px;
+}

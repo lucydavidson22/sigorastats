@@ -1,0 +1,47 @@
+.knocksAnswers, .knocksHour, .setsAnswers, .setsHours, .totalTime{
+  border:2px solid #00b259;
+  border-radius: 15px;
+}
+
+div h4{
+  color: #ffc82c;
+  font-size: 22px;
+}
+
+input{
+  min-width: 250px;
+}
+
+.background{
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.shape{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.shape:first-child{
+  background: linear-gradient(
+    #fffb29,
+    #f09819
+  );
+  left: -430px;
+  top: -25px;
+}
+.shape:last-child{
+  background: linear-gradient(
+      to right,
+      #ff512f,
+      #f09819
+  );
+  right: -490px;
+  /* right: -50px; */
+  bottom: -130px;
+  /* bottom: -80px; */
+}

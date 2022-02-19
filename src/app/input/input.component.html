@@ -1,73 +1,3 @@
-<!-- <div class="container">
-  <form class="main-form" >
-      <h1>Daily Data</h1>
-      <p>
-          <label for="required-input">Please enter data for this date:</label>
-          <input id="today" type="date">
-      </p>
-      <p>
-          <label for="optional-input">Knocks: </label>
-          <input type="text" id="numKnocks" placeholder="Knocks" name="numKnocks" >
-      </p>
-      <p>
-          <label for="optional-input">Answers: </label>
-          <input type="text" id="numAnswers" placeholder="Answers">
-      </p>
-      <p>
-          <label for="optional-input">Sets: </label>
-          <input type="text" id="numSets" placeholder="Sets">
-      </p>
-      <p>
-          <label for="optional-input">Total Time: </label>
-          <input type="text" id="numHours" placeholder="Time in Hours">
-      </p>
-      <p>
-          <label for="optional-input">Props Run: </label>
-          <input type="text" id="numProps" placeholder="Props">
-      </p>
-
-      <div class="report">Send Your Info</div class="report">
-          <a href="./data/data.html" class="dataButton" value="">View Data</a>
-          <a href="#" class="submitButton" (click)="onAddValue()">Submit</a>
-          <button (click)="onClickMe()">Click me!</button>
-
-
-          >
-</div> -->
-
-
-
-
-<!-- <div class="flex-child">
-<div class="container">
-  <form class="main-form">
-      <h1>How Well You Did</h1>
-        <div class="report">Knocks/Answer</div>
-          <div class="knocksAnswers" id="knocksAnswers">
-          <div class="knocksAnswers">
-              <span id="knocksPerAnswers">{{ knocks }} / {{ answers }}</span>
-          </div>
-
-          <div class="report">Knocks/Hour</div>
-          <div class="knocksHour">{{ time }}</div>
-
-          <div class="report">Sets/Answer</div>
-          <div class="setsAnswers">{{ answers }}</div>
-
-          <div class="report">Sets/Hour</div>
-          <div class="setsHours">{{ sets }}</div>
-
-          <div class="report">Total Time</div>
-          <div class="totalHoursTime">{{ props }}</div>
-
-
-          >
-</div> -->
-
-
-
-
-
 <div class="background">
   <div class="shape"></div>
   <div class="shape"></div>
@@ -92,10 +22,13 @@
     <label for="numProps">Props Run: </label>
     <input type="text" id="numProps" placeholder="Props">
 
-  <button href="#" class="submitButton" (click)="onAddValue()" style="color:black">Submit</button>
+    <!-- <button class="submitButton" (click)="onAddValue()" style="color:black">Submit</button> -->
+  <!-- <button href="#" class="submitButton" (click)="onAddValue()" style="color:black">Submit</button> -->
+  <!-- <a class="submitButton" [routerLink]="['view-data']" style="color:black">Submit</a> -->
+  <a class="submitButton" routerLink="/view-data" style="color:black">Submit</a>
 </form>
-
-<form class="main-form">
+ <!-- <router-outlet></router-outlet> -->
+<!-- <form class="main-form">
   <h3>How Well You Did</h3>
 
     <div class="report"><h4>Knocks/Answer:</h4>
@@ -117,4 +50,4 @@
     <div class="report"><h4>Total Time:</h4>
       <div id="totalHoursTime">{{ props }}</div>
     </div>
-</form>
+</form> -->
