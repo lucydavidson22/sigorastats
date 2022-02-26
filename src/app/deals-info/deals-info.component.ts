@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Customer } from './customer-names/customer.model';
 import { DealsInfoService } from './deals-info.service';
@@ -18,11 +19,13 @@ export class DealsInfoComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  onSubmit(){
+  onSubmit(form: NgForm){
     // let customerName = this.customerInputRef.nativeElement.value;
     // this.dealsinfoService.addCustomer(customerName);
     // this.router.navigate(['customer-names'], {relativeTo: this.route});
-    this.dealsinfoService.addCustomer(this.customers)
+    // this.dealsinfoService.addCustomer(this.customers)
+
+    this.router.navigate(['customers']);
   }
 
 }

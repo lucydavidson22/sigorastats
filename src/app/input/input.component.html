@@ -2,30 +2,71 @@
   <div class="shape"></div>
   <div class="shape"></div>
 </div>
-<form class="main-form">
+<form class="main-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
   <h3>Daily Data</h3>
     <label for="today">Please enter data for this date:</label>
-    <input id="today" type="date">
+    <input
+      id="today"
+      type="date"
+      class="form-control"
+      size="120"
+      max="120"
+      [ngModel]= "['date']"
+      #date="ngModel"> {{currentDate | date: 'shortDate' }}
+      <!-- style="color:white" -->
 
     <label for="numKnocks">Knocks: </label>
-    <input type="text" id="numKnocks" placeholder="Knocks" name="numKnocks" >
+    <input
+      type="number"
+      id="numKnocks"
+      placeholder="Knocks"
+      name="numKnocks"
+      class="form-control"
+      [ngModel]= "['knocks']"
+      #knocks="ngModel">
 
     <label for="numAnswers">Answers: </label>
-    <input type="text" id="numAnswers" placeholder="Answers">
+    <input
+      type="number"
+      id="numAnswers"
+      placeholder="Answers"
+      class="form-control"
+      [ngModel]= "['answers']"
+      #answers="ngModel">
 
     <label for="numSets">Sets: </label>
-    <input type="text" id="numSets" placeholder="Sets">
+    <input
+      type="number"
+      id="numSets"
+      placeholder="Sets"
+      class="form-control"
+      [ngModel]= "['sets']"
+      #sets="ngModel">
 
     <label for="numHours">Total Time: </label>
-    <input type="text" id="numHours" placeholder="Time in Hours">
+    <input
+      type="number"
+      id="numHours"
+      placeholder="Time in Hours"
+      class="form-control"
+      [ngModel]= "['totalTime']"
+      #totalTime="ngModel">
 
     <label for="numProps">Props Run: </label>
-    <input type="text" id="numProps" placeholder="Props">
+    <input
+      type="number"
+      id="numProps"
+      placeholder="Props"
+      class="form-control"
+      [ngModel]= "['props']"
+      #props="ngModel"
+      style="margin-bottom: 25px;">
 
     <!-- <button class="submitButton" (click)="onAddValue()" style="color:black">Submit</button> -->
   <!-- <button href="#" class="submitButton" (click)="onAddValue()" style="color:black">Submit</button> -->
   <!-- <a class="submitButton" [routerLink]="['view-data']" style="color:black">Submit</a> -->
-  <a class="submitButton" routerLink="/view-data" style="color:black">Submit</a>
+  <!-- <a class="submitButton" routerLink="/view-data" style="color:black">Submit</a> -->
+  <a class="submitButton" type="submit" style="color:black">Submit</a>
 </form>
  <!-- <router-outlet></router-outlet> -->
 <!-- <form class="main-form">

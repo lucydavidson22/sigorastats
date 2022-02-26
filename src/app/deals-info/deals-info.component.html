@@ -3,27 +3,23 @@
     <div class="shape"></div>
     <div class="shape"></div>
   </div>
-  <form class="main-form">
+  <form class="main-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
       <h1>Deals</h1>
       <table>
         <tr>
           <td>Please enter data for this date:</td>
-          <!-- <td><label for="required-input">Please enter data for this date:</label></td> -->
           <td><input id="today" type="date"> </td>
         </tr>
         <tr>
           <td>Customer Name: </td>
-          <!-- <td><label for="optional-input">Customer Name: </label></td> -->
           <td><input type="text" id="optional-input" placeholder="Customer Name"></td>
         </tr>
         <tr>
           <td>kW:</td>
-          <!-- <td><label for="optional-input">kW: </label></td> -->
           <td><input type="number" id="optional-input" placeholder="Kilowatts"></td>
         </tr>
         <tr>
           <td>Cost to Customer: </td>
-          <!-- <td><label for="optional-input">Cost to Customer: </label></td> -->
           <td><input type="number" id="optional-input" placeholder="Cost"></td>
         </tr>
         <tr>
@@ -46,7 +42,6 @@
         </tr>
         <tr>
           <td>Lead Source: </td>
-          <!-- <td><label for="optional-input">Lead Source: </label></td> -->
           <td><select class="classic" style="color: black">
                 <option>Door Knock</option>
                 <option selected>Referral</option>
@@ -58,10 +53,14 @@
         </tr>
         <tr>
           <td>Commission: </td>
-          <!-- <td><label for="optional-input">Commission: </label></td> -->
-          <td><input type="number" id="optional-input" placeholder="Commission"></td>
+          <td><input
+                type="number"
+                id="optional-input"
+                placeholder="Commission"
+                style="margin-bottom: 25px;">
+          </td>
         </tr>
       </table>
-      <a class="submitButton" (click)="onSubmit()" style="color:black">Submit</a>
+      <a class="submitButton" type="submit" style="color:black">Submit</a>
   </form>
 </div>
