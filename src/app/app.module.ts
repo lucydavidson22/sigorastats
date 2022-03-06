@@ -16,6 +16,7 @@ import { RouterModule } from '@angular/router';
 import { FieldsetModule } from 'primeng/fieldset';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CustomerNamesComponent } from './deals-info/customer-names/customer-names.component';
+import { CommissionCalculatorComponent } from './commission-calculator/commission-calculator.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CustomerNamesComponent } from './deals-info/customer-names/customer-nam
     LoginComponent,
     DailyStatsComponent,
     YearlyStatsComponent,
-    CustomerNamesComponent
+    CustomerNamesComponent,
+    CommissionCalculatorComponent
   ],
   imports: [
     BrowserModule,

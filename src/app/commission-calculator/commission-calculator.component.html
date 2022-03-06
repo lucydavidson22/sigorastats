@@ -1,0 +1,46 @@
+<div class="background">
+  <div class="shape"></div>
+  <div class="shape"></div>
+</div>
+<form class="main-form" (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <h3>Calculate Commission</h3>
+    <label for="sysSize">System Size: </label>
+    <input
+      type="number"
+      id="sysSize"
+      placeholder="System Size"
+      name="numKnocks"
+      class="form-control"
+      [ngModel]= "['sysSize']"
+      #sysSize="ngModel">
+
+    <label for="totalCost">Total Cost: </label>
+    <input
+      type="number"
+      id="totalCost"
+      placeholder="Total Cost"
+      class="form-control"
+      [ngModel]= "['totalCost']"
+      #totalcost="ngModel">
+
+    <label for="dealerFee">Dealer Fee: </label>
+    <input
+      type="number"
+      id="dealerFee"
+      placeholder="Dealer Fee"
+      class="form-control"
+      [ngModel]= "['dealerFee']"
+      #dealerFee="ngModel">
+
+    <label for="adders">Adders: </label>
+    <input
+      type="number"
+      id="adders"
+      placeholder="Adders"
+      class="form-control"
+      [ngModel]= "['adders']"
+      #adders="ngModel"
+      style="margin-bottom: 35px;">
+
+  <a class="submitButton" type="submit" style="color:black">Submit</a>
+</form>
